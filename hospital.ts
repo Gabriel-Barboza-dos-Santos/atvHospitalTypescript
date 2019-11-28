@@ -14,12 +14,27 @@ namespace hospital{
         }
 
         public getEnfermeiro(){
-            this._nome;
+            this._enfermeiros;
         }
 
-        public addEnfermeiro(nome:){
-            this._nome = nome;      
+        public addEnfermeiro(Enfermeiros:Enfermeiro){
+            this._enfermeiros.push(Enfermeiros);      
         }
 
+        public getMedicos(){
+            this._pacientes;
+        }
+
+        public addMedicos(Medicos:Medico){
+            this._medicos.push(Medicos);      
+        }
+
+        public getPacientes(){
+            this._pacientes;
+        }
+
+        public addPacientes(Medicos:Medico){
+            this._medicos.push(Medicos);      
+        }
     }
 }
