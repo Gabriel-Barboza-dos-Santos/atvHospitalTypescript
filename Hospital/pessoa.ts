@@ -4,18 +4,18 @@ namespace hospital{
         private _cpf:string;
 
         public getNome(){
-            this._nome;
+            return this._nome;
         }
 
-        public setNome(nome:string):void{
+        public setNome(nome:string){
             this._nome = nome;
         }
 
         public getCpf(){
-            this._cpf;
+           return  this._cpf;
         }
 
-        public setCpf(cpf:string):void{
+        public setCpf(cpf:string){
             this._cpf = cpf;
         }
     }

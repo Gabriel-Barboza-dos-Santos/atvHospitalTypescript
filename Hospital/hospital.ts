@@ -1,3 +1,6 @@
+///<reference path="paciente.ts"/>
+///<reference path="enfermeiro.ts"/>
+///<reference path="medico.ts"/>
 namespace hospital{
     export class Hospital{
         public _nome:string;
@@ -6,7 +9,7 @@ namespace hospital{
         public _pacientes:Array<Paciente>=[];
 
         public getNome(){
-            this._nome;
+           return this._nome;
         }
 
         public setNome(nome:string){
@@ -14,7 +17,7 @@ namespace hospital{
         }
 
         public getEnfermeiro(){
-            this._enfermeiros;
+            return this._enfermeiros;
         }
 
         public addEnfermeiro(Enfermeiros:Enfermeiro){
@@ -22,7 +25,7 @@ namespace hospital{
         }
 
         public getMedicos(){
-            this._pacientes;
+            return this._medicos;
         }
 
         public addMedicos(Medicos:Medico){
@@ -30,11 +33,11 @@ namespace hospital{
         }
 
         public getPacientes(){
-            this._pacientes;
+            return this._pacientes;
         }
 
-        public addPacientes(Medicos:Medico){
-            this._medicos.push(Medicos);      
+        public addPacientes(Pacientes:Paciente){
+             this._pacientes.push(Pacientes);      
         }
     }
 }

@@ -1,12 +1,13 @@
+///<reference path="pessoa.ts" />
 namespace hospital{
     export class Funcionario extends Pessoa{
         private _codFuncionario:number;
 
         public getcodFuncionario(){
-            this._codFuncionario;
+           return this._codFuncionario;
         }
 
-        public setcodFuncionario(codFuncionario:number):void{
+        public setcodFuncionario(codFuncionario:number){
             this._codFuncionario = codFuncionario;
         }
     }
